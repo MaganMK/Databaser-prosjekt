@@ -11,7 +11,7 @@ public class AppLauncher extends Application {
 	
 	@Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("TreningsApp.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/TreningsApp.fxml"));
         
         Scene scene = new Scene(root);
         

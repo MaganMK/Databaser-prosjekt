@@ -5,7 +5,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
  
-public class Main {
+public class DatabaseCreator {
  
     /**
      * Connect to a sample database
