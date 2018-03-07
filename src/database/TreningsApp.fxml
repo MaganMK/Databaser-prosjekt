@@ -15,24 +15,16 @@
                   <fx:include fx:id="1RegistrereOvelse" source="1RegistrereOvelse.fxml" />
                 </Tab>
                 <Tab fx:id="sisteOkter1" text="2 Siste økter">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
+                  <fx:include fx:id="2NsisteOkter" source="2NsisteOkter.fxml" />
                 </Tab>
                   <Tab fx:id="loggTab1" text="3 Resultatlogg">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                    </content>
+                    <fx:include fx:id="3ResultatLogg" source="3ResultatLogg.fxml" />
                   </Tab>
                   <Tab fx:id="gruppeTab1" text="4 Øvelsesgrupper">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                    </content>
+                    <fx:include fx:id="4OvelsesGrupper" source="4OvelsesGrupper.fxml" />
                   </Tab>
                   <Tab fx:id="usecaseTab1" text="5 Usecase">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                    </content>
+                    <fx:include fx:id="5UseCase" source="5UseCase.fxml" />
                   </Tab>
               </tabs>
             </TabPane>
