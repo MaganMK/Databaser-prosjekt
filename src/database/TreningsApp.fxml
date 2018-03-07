@@ -12,9 +12,7 @@
             <TabPane prefHeight="764.0" prefWidth="1045.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
                 <Tab fx:id="registreringTab1" text="1 Registrering">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
+                  <fx:include fx:id="1RegistrereOvelse" source="1RegistrereOvelse.fxml" />
                 </Tab>
                 <Tab fx:id="sisteOkter1" text="2 Siste økter">
                   <content>
