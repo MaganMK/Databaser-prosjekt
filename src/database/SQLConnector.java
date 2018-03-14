@@ -113,6 +113,29 @@ public class SQLConnector {
 		}
 		return result;
 	}
+	
+	public static boolean addApparat(String apparat) {
+		Connection connection;
+		try {
+			connection = getConnection();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		Statement stmt;
+		try {
+			stmt = connection.createStatement();
+			stmt.executeQuery("INSERT INTO Apparat VALUES (" +apparat+ ")");
+			stmt.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	
 }
 
 

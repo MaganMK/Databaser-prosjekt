@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrereOvelseController">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrereOvelseController">
    <children>
       <Pane prefHeight="760.0" prefWidth="1040.0">
          <children>
@@ -43,6 +43,7 @@
                   <TextField fx:id="varighet" layoutX="441.0" layoutY="80.0" promptText="Varighet i minutter" />
                </children>
             </AnchorPane>
+            <Text fx:id="feedback" layoutX="790.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" />
          </children>
       </Pane>
    </children>
