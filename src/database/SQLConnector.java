@@ -35,6 +35,13 @@ public class SQLConnector {
             }
         }
     }
+
+    public static void showResult(int fromDate, int toDate, String ovelse) {
+
+    }
+
+
+
     /**
      * @param args the command line arguments
      */
