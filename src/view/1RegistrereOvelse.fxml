@@ -6,22 +6,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrereOvelseController">
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrereOvelseController">
    <children>
       <Pane prefHeight="760.0" prefWidth="1040.0">
          <children>
-            <Text layoutX="326.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrere apparater, øvelser og treningsøkter med tilhørende data" />
-            <TextField fx:id="newApparat" layoutX="288.0" layoutY="209.0" prefHeight="27.0" prefWidth="220.0" promptText="Apparat" />
-            <Button layoutX="288.0" layoutY="244.0" mnemonicParsing="false" onAction="#addApparat" prefHeight="39.0" prefWidth="220.0" text="Legg til apparat" />
-            <Text layoutX="288.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til nytt apparat" />
-            <Text layoutX="555.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til ny øvelse" />
-            <TextField fx:id="newOvelse" layoutX="551.0" layoutY="209.0" prefHeight="27.0" prefWidth="220.0" promptText="Øvelse" />
-            <Button layoutX="550.0" layoutY="244.0" mnemonicParsing="false" onAction="#addOvelse" prefHeight="39.0" prefWidth="220.0" text="Legg til øvelse" />
-            <Line endX="100.0" layoutX="518.0" layoutY="369.0" scaleX="4.0" startX="-100.0" />
-            <Button layoutX="273.0" layoutY="297.0" mnemonicParsing="false" onAction="#addExerciseToApparat" prefHeight="39.0" prefWidth="517.0" text="Legg øvelse til apparat" />
-            <AnchorPane layoutX="156.0" layoutY="386.0" prefHeight="343.0" prefWidth="725.0">
+            <Text layoutX="297.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrere apparater, øvelser og treningsøkter med tilhørende data">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <TextField fx:id="newApparat" layoutX="287.0" layoutY="138.0" prefHeight="27.0" prefWidth="220.0" promptText="Apparat" />
+            <Button layoutX="287.0" layoutY="175.0" mnemonicParsing="false" onAction="#addApparat" prefHeight="39.0" prefWidth="220.0" text="Legg til apparat" />
+            <Text layoutX="287.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til nytt apparat" />
+            <Text layoutX="557.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til ny øvelse" />
+            <TextField fx:id="newOvelse" layoutX="556.0" layoutY="138.0" prefHeight="27.0" prefWidth="220.0" promptText="Øvelse" />
+            <Button layoutX="556.0" layoutY="175.0" mnemonicParsing="false" onAction="#addOvelse" prefHeight="39.0" prefWidth="220.0" text="Legg til øvelse" />
+            <Line endX="100.0" layoutX="531.0" layoutY="302.0" scaleX="4.0" startX="-100.0" />
+            <Button layoutX="275.0" layoutY="222.0" mnemonicParsing="false" onAction="#addExerciseToApparat" prefHeight="39.0" prefWidth="517.0" text="Koble øvelse til apparat" />
+            <AnchorPane layoutX="158.0" layoutY="316.0" prefHeight="343.0" prefWidth="725.0">
                <children>
                   <Text layoutX="295.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lag ny treningsøkt" />
                   <TextField fx:id="sessionName" layoutX="97.0" layoutY="43.0" promptText="Navn på økt" />
@@ -43,7 +47,7 @@
                   <TextField fx:id="varighet" layoutX="441.0" layoutY="80.0" promptText="Varighet i minutter" />
                </children>
             </AnchorPane>
-            <Text fx:id="feedback" layoutX="790.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="feedback" fill="RED" layoutX="288.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="485.54882250726223" />
          </children>
       </Pane>
    </children>
