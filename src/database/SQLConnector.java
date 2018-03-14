@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
  
 /**
@@ -95,6 +96,22 @@ public class SQLConnector {
 		} catch(SQLException e) {
 			throw e;
 		}
+	}
+	public static List<ArrayList<String>> getAllSessions() throws SQLException, ClassNotFoundException {
+		List<ArrayList<String>> result = new ArrayList<>();
+		ResultSet rs = getResultSet("SELECT * FROM `Okt`;");
+		while(rs.next()) {
+				ArrayList<String> temp = new ArrayList<String>();
+				temp.add(String.valueOf(rs.getInt("okt_id"))); 
+				temp.add(rs.getString("dato")); 
+				temp.add(rs.getString("tidspunkt")); 
+				temp.add(String.valueOf(rs.getInt("varighet"))); 
+				temp.add(String.valueOf(rs.getInt("personlig_form"))); 
+				temp.add(String.valueOf(rs.getInt("prestasjon"))); 	
+				temp.add(rs.getString("notat"));
+				result.add(temp);
+		}
+		return result;
 	}
 }
 
