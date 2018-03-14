@@ -18,6 +18,9 @@ public class SQLConnector {
 	private static String password = "1234";
 	private static Connection connection;
 	
+    public static void showResult(int fromDate, int toDate, String ovelse) {
+
+    }
 	// Metode for aa hente en SQL connection
 	public static Connection getConnection() throws SQLException {
 		if(connection == null) {
