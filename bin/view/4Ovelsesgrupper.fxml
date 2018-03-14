@@ -24,7 +24,7 @@
             <Button layoutX="651.0" layoutY="211.0" mnemonicParsing="false" onAction="#showExerciseGroup" prefHeight="39.0" prefWidth="224.0" text="Vis liknende øvelser" />
             <ScrollPane layoutX="54.0" layoutY="330.0" prefHeight="272.0" prefWidth="820.0">
                <content>
-                  <ListView fx:id="sameGroupView" prefHeight="272.0" prefWidth="821.0" />
+                  <TextField fx:id="sameGroupView" prefHeight="272.0" prefWidth="821.0" />
                </content>
             </ScrollPane>
          </children>
