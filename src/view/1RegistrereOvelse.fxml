@@ -22,7 +22,7 @@
             <Text layoutX="656.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lag ny treningsøkt" />
             <TextField fx:id="newSession" layoutX="656.0" layoutY="206.0" promptText="Navn" />
             <Button layoutX="656.0" layoutY="263.0" mnemonicParsing="false" onAction="#addSession" prefHeight="39.0" prefWidth="224.0" text="Legg til økt" />
-            <Line endX="100.0" layoutX="518.0" layoutY="359.0" scaleX="4.0" startX="-100.0" />
+            <Line endX="100.0" layoutX="518.0" layoutY="380.0" scaleX="4.0" startX="-100.0" />
             <Text layoutX="78.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til øvelse" />
             <TextField fx:id="sessionField" layoutX="78.0" layoutY="453.0" promptText="Treningsøkt" />
             <TextField fx:id="exerciseField" layoutX="78.0" layoutY="517.0" promptText="Øvelse" />
