@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
 
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane prefHeight="760.0" prefWidth="1040.0">
+         <children>
+            <Text layoutX="255.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrere apparater, øvelser og treningsøkter med tilhørende data" />
+            <TextField fx:id="newApparat" layoutX="78.0" layoutY="206.0" promptText="Apparat" />
+            <Button layoutX="78.0" layoutY="263.0" mnemonicParsing="false" onAction="#addApparat" prefHeight="39.0" prefWidth="224.0" text="Legg til apparat" />
+            <Text layoutX="78.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til nytt apparat" />
+            <Text layoutX="374.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til ny øvelse" />
+            <TextField fx:id="newOvelse" layoutX="374.0" layoutY="206.0" promptText="Øvelse" />
+            <Button layoutX="374.0" layoutY="263.0" mnemonicParsing="false" onAction="#addOvelse" prefHeight="39.0" prefWidth="224.0" text="Legg til øvelse" />
+            <Text layoutX="656.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lag ny treningsøkt" />
+            <TextField fx:id="newSession" layoutX="656.0" layoutY="206.0" promptText="Navn" />
+            <Button layoutX="656.0" layoutY="263.0" mnemonicParsing="false" onAction="#addSession" prefHeight="39.0" prefWidth="224.0" text="Legg til økt" />
+            <Line endX="100.0" layoutX="518.0" layoutY="359.0" scaleX="4.0" startX="-100.0" />
+            <Text layoutX="78.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til øvelse" />
+            <TextField fx:id="sessionField" layoutX="78.0" layoutY="453.0" promptText="Treningsøkt" />
+            <TextField fx:id="exerciseField" layoutX="78.0" layoutY="517.0" promptText="Øvelse" />
+            <TextField fx:id="setField" layoutX="340.0" layoutY="517.0" prefHeight="39.0" prefWidth="92.0" promptText="Set" />
+            <TextField fx:id="weight" layoutX="443.0" layoutY="517.0" prefHeight="39.0" prefWidth="92.0" promptText="Vekt" />
+            <Button layoutX="77.0" layoutY="581.0" mnemonicParsing="false" onAction="#addExerciseToSession" prefHeight="39.0" prefWidth="453.0" text="Legg øvelse i treningsøkt" />
+            <Button layoutX="77.0" layoutY="320.0" mnemonicParsing="false" onAction="#addExerciseToApparat" prefHeight="39.0" prefWidth="517.0" text="Legg øvelse til apparat" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
