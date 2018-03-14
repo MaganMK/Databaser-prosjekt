@@ -24,7 +24,9 @@ public class OvelsesGrupperController {
 					addToGroupField;
 	
 	@FXML public void addExerciseToGroup() {
-		
+		String exercise = addExerciseField.getText();
+		String group = addToGroupField.getText();
+		//SQLConnector.addExerciseToGroup(exercise, group);
 	}
 	
 	
