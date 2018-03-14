@@ -9,6 +9,7 @@ import java.sql.SQLException;
  * @author sqlitetutorial.net
  */
 public class SQLConnector {
+	
      /**
      * Connect to a sample database
      */
