@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
 
+<AnchorPane fx:controller = "controllers.ResultatLoggController" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane prefHeight="660.0" prefWidth="940.0">
+         <children>
+            <Text layoutX="278.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultatlogg for øvelse i tidsintervall">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="resultExercise" layoutX="70.0" layoutY="174.0" prefHeight="39.0" prefWidth="235.0" promptText="Øvelse" />
+            <DatePicker fx:id="fromDate" layoutX="353.0" layoutY="174.0" prefHeight="39.0" prefWidth="235.0" />
+            <DatePicker fx:id="toDate" layoutX="635.0" layoutY="174.0" prefHeight="39.0" prefWidth="235.0" />
+            <Button layoutX="353.0" layoutY="248.0" mnemonicParsing="false" onAction="#showResultLog" prefHeight="39.0" prefWidth="235.0" text="Vis resultatlogg" />
+            <ScrollPane layoutX="70.0" layoutY="330.0" prefHeight="263.0" prefWidth="797.0">
+               <content>
+                  <ListView fx:id="resultView" prefHeight="262.0" prefWidth="797.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
