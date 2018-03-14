@@ -1,6 +1,8 @@
 package controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class RegistrereOvelseController {
@@ -22,7 +24,8 @@ public class RegistrereOvelseController {
 	
 	
 	//Lag ny treningsokt
-	@FXML TextField newSession;
+	@FXML TextField sessionName;
+	@FXML DatePicker sessionDate;
 	
 	@FXML public void addSession() {
 		
@@ -32,16 +35,27 @@ public class RegistrereOvelseController {
 	//Legg ovelse i treningsokt
 	@FXML TextField sessionField,
 					exerciseField,
-					setField,
-					weightField;
+					sets,
+					weight;
 	
 	@FXML public void addExerciseToSession() {
+		
+	}
+	
+	@FXML TextField simpleExerciseField,exerciseDescription ;
+	
+	@FXML public void addSimpleExerciseToSession() {
 		
 	}
 	
 	
 	//Legge ovelse til apparat
 	@FXML public void addExerciseToApparat() {
+		
+	}
+	
+	@FXML TextArea status;
+	public void updateStatus() {
 		
 	}
 
