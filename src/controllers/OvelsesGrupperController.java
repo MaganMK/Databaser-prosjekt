@@ -14,7 +14,7 @@ public class OvelsesGrupperController {
 
 	@FXML public void createGroup() throws SQLException {
 		String newGroup = newGroupField.getText();
-		SQLConnector.addExerciseGroup(newGroup);
+		SQLConnector.insertToTable("ovelsesgruppe",newGroup);
 	}
 	
 	

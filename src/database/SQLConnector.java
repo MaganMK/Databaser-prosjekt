@@ -43,26 +43,13 @@ public class SQLConnector {
 	}
 
 	// Funker for aa sette inn i ovelsesgruppe
-	public static void addExerciseGroup(String groupName) throws SQLException
+	public static void insertToTable(String table, String value) throws SQLException
 	{
 		Connection connection = SQLConnector.getConnection();
 		Statement statement = connection.createStatement();
 		
-		statement.executeUpdate("INSERT INTO ovelsesgruppe " + "VALUES (\"" + groupName + "\");");
+		statement.executeUpdate("INSERT INTO\"" + table + "\" VALUES (\"" + value + "\");");
 	}
-	
-	/*
-	public static void addExerciseToGroup(String exercise, String group) throws SQLException
-	{
-		Connection connection = SQLConnector.getConnection();
-		Statement statement = connection.createStatement();
-		
-		
-		
-		statement.executeUpdate("INSERT INTO ovelseIOvelsesgruppe " + "VALUES (\"" + exercise + "\");");
-	}
-	*/
-	
 }
 
 
