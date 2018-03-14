@@ -13,7 +13,7 @@ public class RegistrereOvelseController {
 	}
 	
 	
-	//Legg til ny øvelse
+	//Legg til ny ovelse
 	@FXML TextField newOvelse;
 	
 	@FXML public void addOvelse() {
@@ -21,7 +21,7 @@ public class RegistrereOvelseController {
 	}
 	
 	
-	//Lag ny treningsøkt
+	//Lag ny treningsokt
 	@FXML TextField newSession;
 	
 	@FXML public void addSession() {
@@ -29,7 +29,7 @@ public class RegistrereOvelseController {
 	}
 	
 	
-	//Legg øvelse i treningsøkt
+	//Legg ovelse i treningsokt
 	@FXML TextField sessionField,
 					exerciseField,
 					setField,
@@ -40,7 +40,7 @@ public class RegistrereOvelseController {
 	}
 	
 	
-	//Legge øvelse til apparat
+	//Legge ovelse til apparat
 	@FXML public void addExerciseToApparat() {
 		
 	}
