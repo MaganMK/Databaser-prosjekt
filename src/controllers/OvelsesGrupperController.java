@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 
 public class OvelsesGrupperController {
 	
-	//Lag ny øvelsesgruppe
+	//Lag ny ovelsesgruppe
 	@FXML TextField newGroupField;
 
 	@FXML public void createGroup() {
@@ -15,7 +15,7 @@ public class OvelsesGrupperController {
 	
 	
 	
-	//Legg øvelse inn i gruppe
+	//Legg ovelse inn i gruppe
 	@FXML TextField addExerciseField,
 					addToGroupField;
 	
@@ -25,7 +25,7 @@ public class OvelsesGrupperController {
 	
 	
 	
-	//Vise liknende øvelser i listview
+	//Vise liknende ovelser i listview
 	@FXML TextField exerciseWithGroupField;
 	@FXML ListView<?> sameGroupView; //TODO parameter
 	
