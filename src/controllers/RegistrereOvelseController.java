@@ -24,7 +24,7 @@ public class RegistrereOvelseController {
 	
 	
 	//Lag ny treningsokt
-	@FXML TextField sessionName;
+	@FXML TextField sessionName, varighet, startTid, note, prestasjon, form;
 	@FXML DatePicker sessionDate;
 	
 	@FXML public void addSession() {
