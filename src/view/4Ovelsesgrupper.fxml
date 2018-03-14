@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane fx:controller = "controllers.OvelsesGrupperController" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OvelsesGrupperController">
    <children>
       <Pane prefHeight="660.0" prefWidth="940.0">
          <children>
@@ -21,7 +20,7 @@
             <Button layoutX="349.0" layoutY="264.0" mnemonicParsing="false" onAction="#addExerciseToGroup" prefHeight="39.0" prefWidth="224.0" text="Legg til øvelse i gruppe" />
             <Text layoutX="349.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg øvelse i øvelsesgruppe" />
             <Text layoutX="651.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vis øvelser i samme grupper" wrappingWidth="243.6044921875" />
-            <TextField layoutX="651.0" layoutY="157.0" promptText="Øvelse" />
+            <TextField fx:id="exerciseWithGroupField" layoutX="651.0" layoutY="157.0" promptText="Øvelse" />
             <Button layoutX="651.0" layoutY="211.0" mnemonicParsing="false" onAction="#showExerciseGroup" prefHeight="39.0" prefWidth="224.0" text="Vis liknende øvelser" />
             <ScrollPane layoutX="54.0" layoutY="330.0" prefHeight="272.0" prefWidth="820.0">
                <content>
