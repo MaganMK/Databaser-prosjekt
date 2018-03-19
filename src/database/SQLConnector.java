@@ -78,6 +78,18 @@ public class SQLConnector {
 			
 		}
 		return result;
+	
+	}
+	
+	public static List<String> getAllExercises() throws ClassNotFoundException, SQLException
+	{
+		List<String> result = new ArrayList<>();
+		ResultSet rs = getResultSet("SELECT * FROM `Ovelse` NATURAL JOIN OvelseIOkt WHERE ovelse_navn = navn");
+		while(rs.next()) {
+				String current = rs.getString("ovelse_navn");									
+				result.add(current);
+		}
+		return result;
 	}
 	
 	public static ResultSet getResultSet(String query) throws SQLException, ClassNotFoundException {
