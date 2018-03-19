@@ -25,11 +25,10 @@
             <Button layoutX="556.0" layoutY="175.0" mnemonicParsing="false" onAction="#addOvelse" prefHeight="39.0" prefWidth="220.0" text="Legg til øvelse" />
             <Line endX="100.0" layoutX="531.0" layoutY="302.0" scaleX="4.0" startX="-100.0" />
             <Button layoutX="275.0" layoutY="222.0" mnemonicParsing="false" onAction="#addExerciseToApparat" prefHeight="39.0" prefWidth="517.0" text="Koble øvelse til apparat" />
-            <AnchorPane layoutX="158.0" layoutY="316.0" prefHeight="343.0" prefWidth="725.0">
+            <AnchorPane layoutX="158.0" layoutY="316.0" prefHeight="395.0" prefWidth="725.0">
                <children>
                   <Text layoutX="295.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lag ny treningsøkt" />
-                  <TextField fx:id="sessionName" layoutX="97.0" layoutY="43.0" promptText="Navn på økt" />
-                  <DatePicker fx:id="sessionDate" layoutX="282.0" layoutY="44.0" prefHeight="27.0" prefWidth="138.0" promptText="Velg dato" />
+                  <DatePicker fx:id="sessionDate" layoutX="185.0" layoutY="44.0" prefHeight="27.0" prefWidth="154.0" promptText="Velg dato" />
                   <Text layoutX="18.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legg til øvelse på apparat" />
                   <TextField fx:id="exerciseField" layoutX="14.0" layoutY="232.0" prefHeight="27.0" prefWidth="151.0" promptText="Øvelse" />
                   <TextField fx:id="sets" alignment="CENTER" layoutX="175.0" layoutY="232.0" prefHeight="17.0" prefWidth="68.0" promptText="Set" />
@@ -39,12 +38,13 @@
                   <TextField fx:id="simpleExerciseField" layoutX="376.0" layoutY="232.0" prefHeight="27.0" prefWidth="154.0" promptText="Øvelse" />
                   <TextField fx:id="exerciseDescription" layoutX="544.0" layoutY="231.0" prefHeight="27.0" prefWidth="171.0" promptText="Beskrivelse" />
                   <Button layoutX="378.0" layoutY="267.0" mnemonicParsing="false" onAction="#addSimpleExerciseToSession" prefHeight="39.0" prefWidth="313.0" text="Legg øvelse i treningsøkt" />
-                  <TextField fx:id="startTid" layoutX="441.0" layoutY="44.0" promptText="Starttidspunkt tt:mm" />
-                  <TextField fx:id="form" layoutX="97.0" layoutY="81.0" promptText="Personlig form" />
+                  <TextField fx:id="startTid" layoutX="367.0" layoutY="44.0" prefHeight="27.0" prefWidth="154.0" promptText="Starttidspunkt tt:mm" />
+                  <TextField fx:id="form" layoutX="106.0" layoutY="81.0" prefHeight="27.0" prefWidth="167.0" promptText="Personlig form" />
                   <Button layoutX="175.0" layoutY="323.0" mnemonicParsing="false" onAction="#addSession" prefHeight="39.0" prefWidth="366.0" text="Lagre økt" />
-                  <TextField fx:id="prestasjon" layoutX="282.0" layoutY="81.0" prefHeight="27.0" prefWidth="138.0" promptText="Prestasjon" />
+                  <TextField fx:id="prestasjon" layoutX="284.0" layoutY="81.0" prefHeight="27.0" prefWidth="138.0" promptText="Prestasjon" />
                   <TextField fx:id="note" alignment="TOP_LEFT" layoutX="106.0" layoutY="116.0" prefHeight="60.0" prefWidth="496.0" promptText="Notat" />
-                  <TextField fx:id="varighet" layoutX="441.0" layoutY="80.0" promptText="Varighet i minutter" />
+                  <TextField fx:id="varighet" layoutX="434.0" layoutY="80.0" promptText="Varighet i minutter" />
+                  <Text fx:id="feedbackSession" layoutX="37.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="642.78173828125" />
                </children>
             </AnchorPane>
             <Text fx:id="feedback" fill="RED" layoutX="288.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="485.54882250726223" />
