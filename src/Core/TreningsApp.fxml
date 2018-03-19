@@ -21,7 +21,7 @@
                     <fx:include fx:id="3ResultatLogg" source="3ResultatLogg.fxml" />
                   </Tab>
                   <Tab fx:id="gruppeTab1" text="4 Øvelsesgrupper">
-                    <fx:include fx:id="4OvelsesGrupper" source="4OvelsesGrupper.fxml" />
+                    <fx:include fx:id="4OvelsesGrupper" source="4Ovelsesgrupper.fxml" />
                   </Tab>
                   <Tab fx:id="usecaseTab1" text="5 Usecase">
                     <fx:include fx:id="5UseCase" source="5UseCase.fxml" />

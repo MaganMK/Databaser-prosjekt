@@ -1,6 +1,5 @@
 package Core;
 
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,7 +11,7 @@ public class AppLauncher extends Application {
 	
 	@Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/TreningsApp.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("TreningsApp.fxml"));
         
         Scene scene = new Scene(root);
         
