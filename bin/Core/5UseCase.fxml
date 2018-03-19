@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.UseCaseController">
+   <children>
+      <Pane prefHeight="660.0" prefWidth="940.0">
+         <children>
+            <Text layoutX="288.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usecase: Se hvilken øvelse man har gjort mest" />
+            <Text fx:id="mostUsedExercise" layoutX="364.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Øvelse" wrappingWidth="391.015625" />
+            <Text fx:id="numberOfTimes" layoutX="364.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antall" wrappingWidth="211.015625" />
+            <Label layoutX="288.0" layoutY="199.0" text="Øvelse:" />
+            <Label layoutX="191.0" layoutY="247.0" text="Antall ganger gjort:" />
+            <Button layoutX="431.0" layoutY="311.0" mnemonicParsing="false" onAction="#findMostUsedExercise" text="Finn ut" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
