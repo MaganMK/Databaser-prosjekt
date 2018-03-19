@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +26,12 @@ public class ResultatLoggController {
         // Specifies the date format
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
         // Converts DatePicker -> String -> Date
-        String fromDateString = String.valueOf(fromDate);
+        LocalDate fromValue = fromDate.getValue();
+        String fromDateString = fromValue.toString();
         Date dateFromDate = formatter.parse(fromDateString);
-        String toDateString = String.valueOf(toDate);
+        
+        LocalDate toValue = toDate.getValue();
+        String toDateString = toValue.toString();
         Date dateToDate = formatter.parse(toDateString);
 
         for (ArrayList<String> list : session) {
