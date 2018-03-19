@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
  
 /**
@@ -122,6 +121,23 @@ public class SQLConnector {
 				temp.add(String.valueOf(rs.getInt("prestasjon"))); 	
 				temp.add(rs.getString("notat"));
 				result.add(temp);
+		}
+		return result;
+	}
+
+	public static List<ArrayList<String>> getSessionsDate(String ovelsesnavn) throws SQLException, ClassNotFoundException {
+    	List<ArrayList<String>> result = new ArrayList<>();
+    	ResultSet rs = getResultSet("SELECT ovelse_navn,dato,tidspunkt,varighet,personlig_form,prestasjon,notat FROM Okt NATURAL JOIN OvelseIOkt WHERE ovelse_navn=\"" + ovelsesnavn + "\";");
+		while(rs.next()) {
+			ArrayList<String> temp = new ArrayList<String>();
+			temp.add(rs.getString("dato"));
+			temp.add(rs.getString("ovelse_navn"));
+			temp.add(rs.getString("tidspunkt"));
+			temp.add(String.valueOf(rs.getInt("varighet")));
+			temp.add(String.valueOf(rs.getInt("personlig_form")));
+			temp.add(String.valueOf(rs.getInt("prestasjon")));
+			temp.add(rs.getString("notat"));
+			result.add(temp);
 		}
 		return result;
 	}

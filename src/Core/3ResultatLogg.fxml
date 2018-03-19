@@ -22,7 +22,7 @@
             <Button layoutX="353.0" layoutY="248.0" mnemonicParsing="false" onAction="#showResultLog" prefHeight="39.0" prefWidth="235.0" text="Vis resultatlogg" />
             <ScrollPane layoutX="70.0" layoutY="330.0" prefHeight="263.0" prefWidth="797.0">
                <content>
-                  <ListView fx:id="resultView" prefHeight="262.0" prefWidth="797.0" />
+                  <TextArea fx:id="resultView" prefHeight="262.0" prefWidth="797.0" />
                </content>
             </ScrollPane>
          </children>

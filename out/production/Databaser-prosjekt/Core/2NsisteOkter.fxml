@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane fx:controller = "controllers.NsisteOkterController" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NsisteOkterController">
    <children>
       <Pane prefHeight="636.0" prefWidth="964.0">
          <children>
@@ -20,7 +19,7 @@
             <Button layoutX="386.0" layoutY="172.0" mnemonicParsing="false" onAction="#showNsessions" prefHeight="39.0" prefWidth="224.0" text="Vis" />
             <ScrollPane layoutX="158.0" layoutY="229.0" prefHeight="330.0" prefWidth="649.0">
                <content>
-                  <ListView fx:id="nExercisesView" prefHeight="377.0" prefWidth="651.0" />
+                  <TextArea fx:id="nExercisesView" prefHeight="331.0" prefWidth="650.0" />
                </content>
             </ScrollPane>
          </children>
